@@ -242,7 +242,7 @@ button.button-normal, .button-normal a {
 button.button-normal.white, .button-normal.white a {
     background-color: #ffffff;
     border: 1px solid #ffffff;
-    color: #0097a7;
+    color: black;
 }
 button.button-normal.white:hover, .button-normal.white a:hover {
     background-color: transparent;
@@ -250,14 +250,14 @@ button.button-normal.white:hover, .button-normal.white a:hover {
     color: #ffffff;
 }
 button.button-normal.green, .button-normal.green a {
-    background-color: #0097a7;
-    border: 1px solid #0097a7;
+    background-color: rgb(201, 201, 31);
+    border: 1px solid #ffffff;
     color: #ffffff;
 }
 button.button-normal.green:hover, .button-normal.green a:hover {
     background-color: transparent;
-    border: 1px solid #0097a7;
-    color: #0097a7;
+    border: 1px solid black;
+    color: black;
 }
 .flexslider {
     margin: 0;
@@ -303,6 +303,7 @@ form input:focus, form textarea:focus {
     -o-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
 }
+
 /*-----------------------------------------------------------------------------------*/
 /*  2a.  LOGO
 /*-----------------------------------------------------------------------------------*/
@@ -310,9 +311,17 @@ form input:focus, form textarea:focus {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 120px;
+    
+    
 }
 #header.fixedwrap .logo {
     margin-top: 10px;
+    
+}
+.header img{
+    height: 400px;
+    
+
 }
 /*-----------------------------------------------------------------------------------*/
 /*  2b.  MOBILE MENU
@@ -345,6 +354,7 @@ form input:focus, form textarea:focus {
 .c-menu--slide-right {
     width: 100%;
     height: 100%;
+    color: #000;
 }
 @media all and (min-width: 320px) {
     .c-menu--slide-right {
@@ -434,6 +444,7 @@ form input:focus, form textarea:focus {
 }
 .menus-mobile li a:hover, .menus-mobile ul.child li a:hover {
     opacity: 0.7;
+    color: #000;
 }
 .logo-menu-right {
     margin: 15px 0px;
@@ -461,13 +472,13 @@ ul.menus li a {
     padding: 20px 20px;
 }
 ul.menus li a:hover, ul.menus li.active a, ul.menus li.open a {
-    background-color: #c29e55;
+    background-color:rgb(231, 231, 16) ;
     color: #ffffff;
 }
 ul.menus li.has-child a:hover:after, ul.menus li.open a:after {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 7px solid #c29e55;
+    border-top: 7px solid yellow;
     content:"";
     display: block;
     margin: 0 auto -7px;
@@ -665,10 +676,14 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
     display: block;
     margin: 30px 0;
     width: 50px;
-    border-top: 2px solid #2d186b;
+    border-top: 2px solid #8f87a8;
 }
 .heading-block h2 {
     margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading-block p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .heading-block h4.tagline {
     color: #999999;
@@ -687,6 +702,7 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
  .flexslider-wrap .flexslider .slides > li {
     position: relative;
     background-position: center center;
+    height: 100;
 }
 .flexslider-wrap .flexslider .slides .flex-content {
     position: absolute;
@@ -702,7 +718,7 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
 /*  3a.  BANNER
 /*-----------------------------------------------------------------------------------*/
  .banner {
-    background-color: #2d186b;
+    background-color: gray;
 }
 .banner.large {
     padding: 60px 0;
@@ -710,9 +726,18 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
 .banner.small {
     padding: 30px 0;
 }
-.banner h1, .banner h3 {
+.banner h3 {
     color: #ffffff;
     margin: 10px 0;
+}
+.banner h1{
+    color: ghostwhite;
+}
+.banner a{
+    color:black;
+}
+.banner span{
+    color: yellow;
 }
 /*-----------------------------------------------------------------------------------*/
 /*  3b.  ABOUT US SECTION
@@ -785,6 +810,7 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
 /*-----------------------------------------------------------------------------------*/
  .our-facility {
     padding: 100px 0 100px 0;
+    background-color: #000000;
 }
 .facility-item .counter-number {
     position: relative;
@@ -1084,7 +1110,7 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
     margin-top: 0;
 }
 .panel-group .panel-heading {
-    background-color: #2d186b;
+    background-color: rgb(226, 226, 32);
     border-radius: 0;
     padding: 20px 20px;
 }
@@ -1514,7 +1540,9 @@ ul.lesson li:first-child {
     overflow: hidden;
 }
 .contact-content p {
-    margin: 0;
+    margin: 19;
+
+    
 }
 .contact-form form input#name, .contact-form form input#email {
     width: 49.3%;
@@ -1522,6 +1550,9 @@ ul.lesson li:first-child {
 }
 .contact-form form input#name {
     margin-right: 10px;
+}
+.contact-form form button{
+    color:yellow;
 }
 /*-----------------------------------------------------------------------------------*/
 /*  9.  BLOG PAGE
@@ -1735,7 +1766,7 @@ ul.lesson li:first-child {
 /*  10.  FOOTER
 /*-----------------------------------------------------------------------------------*/
  #footer {
-    background-color: #c29e55;
+    background-color: rgb(190, 190, 35);
     padding: 100px 0;
 }
 /*-----------------------------------------------------------------------------------*/
@@ -1747,6 +1778,9 @@ ul.lesson li:first-child {
 }
 .widget-footer p {
     color: #ffffff;
+}
+.widget-footer h4{
+    color:white;
 }
 .widget-footer h4.title {
     color: #ffffff;
